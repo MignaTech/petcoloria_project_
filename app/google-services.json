@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "867077984804",
+    "project_id": "petcoloria-db",
+    "storage_bucket": "petcoloria-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867077984804:android:d5ad8aace4ffd25d8abeb1",
+        "android_client_info": {
+          "package_name": "com.android.java.app.petcoloria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867077984804-q64grkr7d0d0f6pd8iogp6vilbts64oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCEKRGuZG2kIRRWhABTk2Bn6gYOX87cYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867077984804-q64grkr7d0d0f6pd8iogp6vilbts64oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
