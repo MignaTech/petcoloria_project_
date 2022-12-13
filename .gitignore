@@ -1,0 +1,56 @@
+# Archivo Gradle
+.gradle/
+build/
+
+# Archivos de registro
+*.log
+
+# Archivos y carpetas generados por Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation
+*.apk
+*.ap_
+*.aab
+output.json
+                            
+# Archivos para la maquina virtual dex
+*.dex
+                             
+# Archivos de clase Java
+*.class
+                             
+# Archivos generados
+bin/
+gen/
+                             
+# Archivo de configuracion local (sdk path, etc)
+local.properties
+                         
+# Base de datos de miniaturas de Windows
+Thumbs.db
+                 
+# Archivos OSX
+.DS_Store
+                             
+# Android Studio o Intellij
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Archivos de almacen de claves
+*.jks
+*.keystore
+
+# Servicios de Google (ejem. APIs o Firebase)
+google-services.json
+
+#NDK
+obj/
+.externalNativeBuild
+
+# Perfiles de Android
+*.hprof
