@@ -46,7 +46,7 @@ render.experimental.xml
 *.keystore
 
 # Servicios de Google (ejem. APIs o Firebase)
-google-services.json
+#google-services.json
 
 #NDK
 obj/
