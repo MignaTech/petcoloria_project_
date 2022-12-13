@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PetColoria</string>
+    <string name="title_activity_login_menu">login_menu</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buscarmenu">Buscar</string>
+
+    <string-array name="lista">
+        <item>Usuario Cliente</item>
+        <item>Usuario Veterinario</item>
+    </string-array>
+
+    <string-array name="gender_list">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+
+    <string-array name="specie_list">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Conejo</item>
+        <item>Cuyo</item>
+        <item>Hamster</item>
+        <item>Ave</item>
+    </string-array>
+
+
+</resources>

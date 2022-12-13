@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_doctor"
+    app:startDestination="@id/f_doctor_menu">
+
+    <fragment
+        android:id="@+id/f_doctor_menu"
+        android:name="com.android.usecases.menu.fragments.f_doctor_menu"
+        android:label="f_doctor_menu"
+        tools:layout="@layout/f_doctor_menu" >
+        <action
+            android:id="@+id/action_f_doctor_menu_to_f_doctor_profile"
+            app:destination="@id/f_doctor_profile"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_f_doctor_menu_to_f_doctor_notifications"
+            app:destination="@id/f_doctor_notifications"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_f_doctor_menu_to_f_doctor_date"
+            app:destination="@id/f_doctor_date"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_f_doctor_menu_to_f_doctor_guide"
+            app:destination="@id/f_doctor_guide"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/f_doctor_date"
+        android:name="com.android.usecases.menu.fragments.f_doctor_date"
+        android:label="f_doctor_date"
+        tools:layout="@layout/f_doctor_date" >
+        <action
+            android:id="@+id/action_f_doctor_date_to_f_doctor_menu"
+            app:destination="@id/f_doctor_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_doctor_notifications"
+        android:name="com.android.usecases.menu.fragments.f_doctor_notifications"
+        android:label="f_doctor_notifications"
+        tools:layout="@layout/f_doctor_notifications" >
+        <action
+            android:id="@+id/action_f_doctor_notifications_to_f_doctor_menu"
+            app:destination="@id/f_doctor_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_doctor_profile"
+        android:name="com.android.usecases.menu.fragments.f_doctor_profile"
+        android:label="f_doctor_profile"
+        tools:layout="@layout/f_doctor_profile" >
+        <action
+            android:id="@+id/action_f_doctor_profile_to_f_doctor_menu"
+            app:destination="@id/f_doctor_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+        <action
+            android:id="@+id/action_f_doctor_profile_to_f_doctor_schedule"
+            app:destination="@id/f_doctor_schedule"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_doctor_schedule"
+        android:name="com.android.usecases.menu.fragments.f_doctor_schedule"
+        android:label="f_doctor_schedule"
+        tools:layout="@layout/f_doctor_schedule" >
+        <action
+            android:id="@+id/action_f_doctor_schedule_to_f_doctor_profile"
+            app:destination="@id/f_doctor_profile"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_doctor_guide"
+        android:name="com.android.usecases.menu.fragments.f_doctor_guide"
+        android:label="f_doctor_guide" >
+        <action
+            android:id="@+id/action_f_doctor_guide_to_f_doctor_menu"
+            app:destination="@id/f_doctor_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+</navigation>

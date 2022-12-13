@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_customer"
+    app:startDestination="@id/customer_menu">
+
+    <fragment
+        android:id="@+id/customer_menu"
+        android:name="com.android.usecases.menu.fragments.f_customer_menu"
+        android:label="f_customer_menu"
+        tools:layout="@layout/f_customer_menu" >
+        <action
+            android:id="@+id/action_customer_menu_to_profile_menu_customer"
+            app:destination="@id/profile_menu_customer"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+        <action
+            android:id="@+id/action_customer_menu_to_pet_menu"
+            app:destination="@id/pet_menu"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_customer_menu_to_search_menu"
+            app:destination="@id/search_menu"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_customer_menu_to_f_customer_date"
+            app:destination="@id/f_customer_date"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+        <action
+            android:id="@+id/action_customer_menu_to_f_customer_guide"
+            app:destination="@id/f_customer_guide"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pet_menu"
+        android:name="com.android.usecases.menu.fragments.f_customer_pet"
+        android:label="f_pet_menu"
+        tools:layout="@layout/f_customer_pet" >
+        <action
+            android:id="@+id/action_pet_menu_to_customer_menu"
+            app:destination="@id/customer_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+        <action
+            android:id="@+id/action_pet_menu_to_addpetFragment"
+            app:destination="@id/addpetFragment"
+            app:enterAnim="@anim/enter_right_to_left"
+            app:exitAnim="@anim/exit_left"
+            app:popEnterAnim="@anim/enter_left_to_right"
+            app:popExitAnim="@anim/exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_menu_customer"
+        android:name="com.android.usecases.menu.fragments.f_customer_profile"
+        android:label="f_profile_menu_customer"
+        tools:layout="@layout/f_customer_profile" >
+        <action
+            android:id="@+id/action_profile_menu_customer_to_customer_menu2"
+            app:destination="@id/customer_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_menu"
+        android:name="com.android.usecases.menu.fragments.f_search_menu"
+        android:label="f_search_menu"
+        tools:layout="@layout/f_search_menu" >
+        <action
+            android:id="@+id/action_search_menu_to_customer_menu"
+            app:destination="@id/customer_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_customer_date"
+        android:name="com.android.usecases.menu.fragments.f_customer_date"
+        android:label="f_customer_date"
+        tools:layout="@layout/f_customer_date" >
+        <action
+            android:id="@+id/action_f_customer_date_to_customer_menu"
+            app:destination="@id/customer_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/addpetFragment"
+        android:name="com.android.usecases.home.addpet.addpetFragment"
+        android:label="f_addpet"
+        tools:layout="@layout/f_addpet" >
+        <action
+            android:id="@+id/action_addpetFragment_to_pet_menu"
+            app:destination="@id/pet_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_customer_guide"
+        android:name="com.android.usecases.menu.fragments.f_customer_guide"
+        android:label="f_customer_guide"
+        tools:layout="@layout/f_customer_guide" >
+        <action
+            android:id="@+id/action_f_customer_guide_to_customer_menu"
+            app:destination="@id/customer_menu"
+            app:enterAnim="@anim/enter_left_to_right"
+            app:exitAnim="@anim/exit_right"
+            app:popEnterAnim="@anim/enter_right_to_left"
+            app:popExitAnim="@anim/exit_left" />
+    </fragment>
+</navigation>

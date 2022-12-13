@@ -1,0 +1,263 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="com.android.usecases.home.addpet.addpetFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/border_rounded_button">
+        <LinearLayout
+            android:id="@+id/btn_regresar"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img_vector"
+                app:tint="@color/green_534"
+                tools:ignore="ImageContrastCheck"
+                android:contentDescription="TODO" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:text="Agregar Mascota"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fui_wrapper_padding_horiz"
+            android:layout_marginBottom="300dp"
+            android:orientation="vertical"
+            android:background="@drawable/border_rounded_button">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/pet_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_footprint_icon" />
+
+                <TextView
+                    android:id="@+id/add_image_pet"
+                    android:layout_width="140dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/blueFF"
+                    android:text="Agregar Foto"/>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <EditText
+                    android:id="@+id/name_pet_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/img_pet"
+                    android:background="@android:color/transparent"
+                    android:hint="Nombre de la mascota"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingStart="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_pet"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img_pet_icon"
+                    app:tint="@color/green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12.7dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <EditText
+                    android:id="@+id/age_pet"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/img_pet4"
+                    android:background="@android:color/transparent"
+                    android:hint="Edad (Meses)"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingStart="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_pet4"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img_pet_icon"
+                    app:tint="@color/green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12.7dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <Spinner
+                    android:id="@+id/type_pet"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/img_pet3"
+                    android:background="@android:color/transparent"
+                    android:hint="Tipo animal"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingStart="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_pet3"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img_pet_icon"
+                    app:tint="@color/green" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12.7dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <Spinner
+                    android:id="@+id/gender_pet"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/img_pet1"
+                    android:background="@android:color/transparent"
+                    android:hint="Género"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingStart="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_pet1"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img_pet_icon"
+                    app:tint="@color/green" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12.7dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <EditText
+                    android:id="@+id/color_pet"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/img_pet2"
+                    android:background="@android:color/transparent"
+                    android:hint="Color"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingStart="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_pet2"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/img_pet_icon"
+                    app:tint="@color/green" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_pet_add"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/green_534"
+                    android:text="Agregar Mascota"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:background="@drawable/blue_border_rounded_cornwe"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
